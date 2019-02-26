@@ -1,81 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Forum|Source+Serif+Pro" rel="stylesheet">
-    <style>
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font-family: 'Forum', "Lato";
-            color: #333;
-        }
+    <meta charset="UTF-8">
+    <title>Zodiac builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
 
-/*
-        p {
-            font-family: 'Source Serif Pro', serif;
-            color: #AAA;
-        }
-*/
-
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            position: relative;
-            opacity: 0.7;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-right: 5%;
-        }
-
-        .bgimg-1 {
-            background-image: url("dadaparbanquetyears.jpg");
-            height: 80%;
-        }
-
-        .caption {
-            position: relative;
-            left: 0;
-            top: 10%;
-            width: 100%;
-            text-align: right;
-            color: #000;
-            padding-right: 10%;
-        }
-
-        .caption span.border {
-            background-color: #111;
-            color: #fff;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px;
-        }
-
-        h3 {
-            letter-spacing: 5px;
-            font: 20px "Lato", sans-serif;
-            color: #111;
-        }
-
-    </style>
 </head>
 
 <body>
 
-    <div class="bgimg-1">
-        <div class="caption">
-            <span class="border">dream</span>
-            <br>
-            <br>
-            <span class="border">table</span>
-        </div>
-    </div>
+    <!-- invisible box -->
+    <div id=box>
 
-    <p style="padding:5px 15px">Come meet other dreamers and bring a dream to share. This is really a bit of an experiment, admittedly. But let's try to meet up and see what happens! At the moment we're just trying to organise a first dream table in Philadelphia in February. If you're interested, please join the facebook <a href="https://www.facebook.com/groups/dreamtable/" target="_blank">group</a>, or if you're not a bookface person, put your mail in <a href="http://eepurl.com/geMPun" target="_blank">here</a>. If you have any questions, please email dannykennedy at email.com</p>
-    <p p style="padding:5px 15px 15px 15px">Dream table agrees with the dream sharing principles <a href="http://www.jeremytaylor.com/dream_work/ethics/index.html" target="_blank">here</a> and <a href="http://dreamstudies.org/2009/08/12/how-to-start-a-dream-sharing-circle-in-your-town/" target="_blank">here</a>, and the Surrealist Manifesto <a href="https://www.tcf.ua.edu/Classes/Jbutler/T340/SurManifesto/ManifestoOfSurrealism.htm" target="_blank">here</a>.</p>
+
+
+        <div class="primary-shape circle" id="original-circle" style="top: 150px; left: 20px;" onclick="virgo(this)"></div>
+
+        <div class="primary-shape triangle" id="original-triangle" style="top: 150px; left: 150px;" onclick="capricorn(this)"></div>
+
+
+
+    </div>
+    <!-- end invisible box -->
+    
+    <script src="script.js"></script>
 
 </body>
 
